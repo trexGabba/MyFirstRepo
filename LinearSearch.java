@@ -11,6 +11,8 @@ class Solution
   {
   if(arr[i]==key)
   System.out.println(true);
+  else
+  System.out.println(false);
   }
   
   }
