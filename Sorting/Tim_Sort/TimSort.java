@@ -113,7 +113,7 @@ class TimSort {
         this.showArrayElements();
         System.out.println();
     }
-
+    //PRINTING METHOD
     public void showArrayElements() {
         for (int i = 0; i < this.array.length; i++) {
             System.out.print(this.array[i] + " ");
