@@ -14,7 +14,7 @@ public class SelectSort {
 				arr[i] = swapValues; // swap selectedValue to current position
 		}
 	}
-
+	//Printing method fore the array
 	public void showArr(int[] arr) { // display content of array
 		for(int i=0; i<arr.length; i++) {
 			System.out.print(arr[i] + "\t");
