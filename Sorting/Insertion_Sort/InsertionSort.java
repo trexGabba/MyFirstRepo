@@ -9,6 +9,7 @@ public class Insertion_Sort{
                System.out.print(a[i] + " ");
           }
      }
+     //The method for sorting
      public static void sort(int[] a,int length) {
           
           int n = a.length;
