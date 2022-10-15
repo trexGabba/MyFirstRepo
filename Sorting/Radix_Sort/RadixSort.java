@@ -17,7 +17,7 @@ public class RadixSort {
       position *= 10;
     }        
   }
-    
+  //element array  
   private static int getMaxElementInArray(int[] arr){
     int max = arr[0];
     for(int i = 1; i < arr.length; i++){
