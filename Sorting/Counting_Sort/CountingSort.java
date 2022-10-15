@@ -39,7 +39,7 @@ class CountingSort {
     }
   }
 
-  
+  //  The main method starts here
   public static void main(String args[]) {
     int[] data = { 4, 2, 2, 8, 3, 3, 1 };
     int size = data.length;
