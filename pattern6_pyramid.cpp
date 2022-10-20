@@ -23,7 +23,7 @@ int main()
         {
             cout<<"  ";
         }
-        //just add extra space before star *
+        //just add extra space before star * 
         for(int j=0;j<=i;j++)
         {
             cout<<"  * ";
