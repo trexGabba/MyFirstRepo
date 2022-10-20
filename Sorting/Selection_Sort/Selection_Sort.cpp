@@ -3,13 +3,12 @@ using namespace std;
 
 int main()
 {
-    int i, j, n, flag, arr[100];
+    int i, j, n, arr[100];
     cout << "Enter how many elements to be sorted: "
          << "\n";
     cin >> n;
     cout << "Enter elements: "
          << "\n";
-    
     for (i = 0; i < n; i++)
     {
         cin >> arr[i];
@@ -19,31 +18,30 @@ int main()
     {
         cout << arr[i] << " ";
     }
-    //Sort Algo
-    flag = 0;
+    cout<<"\n\n";
+    //sort algo
     for (i = 0; i < n - 1; i++)
     {
-        cout << "\nPass " << i + 1 << ": \n";
-
-        for (j = 0; j < n - 1 - i; j++)
+        int min = i;
+        for (j = i + 1; j < n; j++)
         {
-            if (arr[j + 1] < arr[j])
+            if (arr[min] > arr[j])
             {
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-                flag = 1;
+                min = j;
             }
-            for (int k = 0; k < n; k++)
-            {
-                cout << arr[k] << " ";
-            }
-            cout << "\n";
         }
-        if (flag == 0)
+        if (min != i)
         {
-            break;
+            int temp;
+            temp = arr[min];
+            arr[min] = arr[i];
+            arr[i] = temp;
         }
+    for (int k = 0; k < n; k++)
+    {
+        cout << arr[k] << " ";
+    }
+    cout<<"\n";
     }
     cout << "\nAfter sorting: \n";
     for (i = 0; i < n; i++)
@@ -52,4 +50,3 @@ int main()
     }
     return 0;
 }
-//TC-> o(n^2)
