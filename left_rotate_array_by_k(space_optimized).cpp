@@ -28,5 +28,6 @@ int main()
     left_rotate_by_k(arr, n, 2);
     return 0;
 }
+
 // time complexity=o(n)
 // space complexity=o(1)
